@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ariel Alegre | Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container">
+            <!--logo-->
+            <a href="#" class="navbar-brand d-flex align-items-center gap-2">
+                <i data-lucide="code-2" class="navbar-logo-icon"></i>
+                Ariel
+            </a>
+
+            <div class="d-flex align-items-center gap-2 d-md-none">
+
+                <!--btn de tema-->
+                <button id="themeToggleMobile" class="btn" type="button" aria-label="Cambiar a modo oscuro">
+                    <i data-lucide="moon"></i>
+                </button>
+
+                <!--btn menú móvil-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Abrir menú">
+                    <i data-lucide="menu"></i>
+                </button>
+
+            </div>
+
+            <!--contenido de la navbar-->
+            <div class="collapse navbar-collapse" id="navbarContent">
+
+                <ul class="navbar-nav ms-auto align-items-md-center gap-md-3">
+
+                    <li class="nav-item">
+                        <a href="#sobre-mi" class="nav-link">
+                            Sobre mí
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#proyectos" class="nav-link">
+                            Proyectos
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#habilidades" class="nav-link">
+                            Habilidades
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#contacto" class="nav-link">
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!--btn de tema escritorio-->
+                <button
+                    id="themeToggleDesktop"
+                    class="btn d-none d-md-flex"
+                    type="button"
+                    aria-label="Cambiar a modo oscuro"
+                >
+                    <i data-lucide="moon"></i>
+                </button>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!--hero-->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+
+                <div class="hero-avatar">
+                    <span>A</span>
+                </div>
+
+                <div>
+                    <h1>Hola, soy Ariel</h1>
+
+                    <p>
+                        Estudiante de Licenciatura en Sistemas de la Información
+                        apasionado por el desarrollo y el aprendizaje continuo
+                    </p>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#contacto" class="hero-button hero-button-primary">
+                        Contacto
+                    </a>
+
+                    <a href="#proyectos" class="hero-button hero-button-secondary">
+                        Ver proyectos
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!--sección sobre mí-->
+    <section id="sobre-mi"  class="sobre-mi">
+        <div class="container">
+            <div class="sobre-mi-content">
+                <div class="sobre-mi-titulo">
+                    <i data-lucide="graduation-cap"></i>
+                    <h2>Sobre mí</h2>
+                </div>
+
+                <div class="sobre-mi-texto">
+                    <p>
+                        Soy estudiante de la Licenciatura en Sistema de la Información,
+                        interesado en el desarrollo de software y las nuevas tecnologías.
+                    </p>
+
+                    <p>
+                        Me gusta aprender, enfrentar nuevos desafíos y desarrollar soluciones
+                        inovadoras eficientes que permitan resolver problemas reales.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/theme.js"></script>
+    <!--inicializa lucide-->
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>
