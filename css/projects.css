@@ -137,6 +137,127 @@
     opacity: 0.65;
 }
 
+/*DESCRIPCIÓN RESUMIDA*/
+.project-description{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    min-height: 3.04em;
+}
+
+/*BTN VER MÁS INFO*/
+.project-more-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    align-self: flex-start;
+    margin-top: 1rem;
+    padding: 0.5rem 0.85rem;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    background-color: transparent;
+    color: var(--primary);
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.project-more-btn:hover{
+    background-color: var(--background);
+    border-color: var(--primary);
+}
+
+.project-more-btn i{
+    width: 16px;
+    height: 16px;
+}
+
+/*MODAL DE PROYECTOS*/
+.modal-content.project-modal{
+    background-color: var(--background);
+    color: var(--primary);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.project-modal .modal-header{
+    border-bottom: 1px solid var(--border);
+}
+
+.project-modal .modal-title{
+    color: var(--primary) !important;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.project-modal .modal-body{
+    color: var(--foreground);
+}
+
+.project-modal .modal-body h6{
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.project-modal .modal-footer{
+    border-top: 1px solid var(--border);
+}
+
+.project-modal .btn-close{
+    filter: var(--modal-close-filter, none);
+}
+
+[data-theme="dark"] .project-modal .btn-close{
+    filter: invert(1);
+}
+
+/*img del proyecto*/
+.project-modal .modal-project-image{
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/*botones del modal*/
+.project-modal .modal-project-btn{
+    color: var(--primary);
+    background-color: transparent;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.project-modal .modal-project-btn:hover{
+    color: var(--background);
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+/*botones*/
+.project-modal .modal-footer .btn{
+    border-radius: 8px;
+}
+
+/*estilos para el icon de github*/
+.github-icon{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: midle;
+}
+
+/*adaptdar el ícono al modo oscuro*/
+[data-theme="dark"] .github-icon{
+    filter: invert(1);
+}
 
 /*RESPONSIVE*/
 @media(max-width: 991px){
@@ -145,7 +266,7 @@
     }
 }
 
-@media(max-widt: 575px){
+@media(max-width: 575px){
     .projects-grid{
         grid-template-columns: 1fr;
     }

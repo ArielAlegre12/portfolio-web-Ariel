@@ -2,7 +2,7 @@
     {
         "title": "Mini Games Platform",
         "description": "Plataforma web que reúne diferentes minijuegos estaticos con tecnologías web.",
-        "image" : null,
+        "image" : "img/miniJuegosImg.png",
         "technologies": [
             "HTML5",
             "CSS3",
@@ -14,7 +14,7 @@
     {
         "title": "VagoZone",
         "description": "Proyecto web desarrollado utilizando JavaScript y herramientas para la persistencia de datos",
-        "image": null,
+        "image": "img/vagoZoneImg.png",
         "technologies": [
             "JavaScript",
             "Bootsrapt",
