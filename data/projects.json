@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Mini Games Platform",
+        "description": "Plataforma web que reúne diferentes minijuegos estaticos con tecnologías web.",
+        "image" : null,
+        "technologies": [
+            "HTML5",
+            "CSS3",
+            "JavaScript"
+        ],
+        "github": "https://github.com/ArielAlegre12/Proyecto-Mini-Juegos",
+        "demo": "https://arielalegre12.github.io/Proyecto-Mini-Juegos/"
+    },
+    {
+        "title": "VagoZone",
+        "description": "Proyecto web desarrollado utilizando JavaScript y herramientas para la persistencia de datos",
+        "image": null,
+        "technologies": [
+            "JavaScript",
+            "Bootsrapt",
+            "supabase"
+        ],
+        "github": "https://github.com/ArielAlegre12/VagoZone",
+        "demo": "https://arielalegre12.github.io/VagoZone/"
+    }
+]
