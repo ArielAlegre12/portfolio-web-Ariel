@@ -1,8 +1,8 @@
 [
     {
         "title": "Mini Games Platform",
-        "description": "Plataforma web que reúne diferentes minijuegos estaticos con tecnologías web.",
-        "image" : "img/miniJuegosImg.png",
+        "description": "Plataforma web que reúne diferentes minijuegos interactivos en un mismo sitio. Implementa funcionalidades de registro de usuarios y seguimiento del progreso, utilizando mecanismos de almacenamiento local para conservar la información de los jugadores.",
+        "image": "img/miniJuegosImg.png",
         "technologies": [
             "HTML5",
             "CSS3",
@@ -13,9 +13,11 @@
     },
     {
         "title": "VagoZone",
-        "description": "Proyecto web desarrollado utilizando JavaScript y herramientas para la persistencia de datos",
+        "description": "Aplicación web orientada a la gestión y seguimiento de una biblioteca personal de videojuegos. Permite registrar juegos, administrar información de forma dinámica y consultar datos mediante la integración con la API de Steam. Utiliza Supabase para la autenticación y persistencia de datos.",
         "image": "img/vagoZoneImg.png",
         "technologies": [
+            "HTML5",
+            "CSS3",
             "JavaScript",
             "Bootsrapt",
             "supabase"
