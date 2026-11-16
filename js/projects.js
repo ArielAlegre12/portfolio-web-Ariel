@@ -146,4 +146,4 @@ function openProjectModal(index){
 }
 
 //cargar los proyectos al iniciar.
-loadProjects();
+window.projectsLoaded = loadProjects();
