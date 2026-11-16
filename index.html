@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
@@ -80,12 +81,8 @@
                 </ul>
 
                 <!--btn de tema escritorio-->
-                <button
-                    id="themeToggleDesktop"
-                    class="btn d-none d-md-flex"
-                    type="button"
-                    aria-label="Cambiar a modo oscuro"
-                >
+                <button id="themeToggleDesktop" class="btn d-none d-md-flex" type="button"
+                    aria-label="Cambiar a modo oscuro">
                     <i data-lucide="moon"></i>
                 </button>
 
@@ -121,13 +118,13 @@
                         Ver proyectos
                     </a>
                 </div>
-                
+
             </div>
         </div>
     </section>
 
     <!--sección sobre mí-->
-    <section id="sobre-mi"  class="sobre-mi">
+    <section id="sobre-mi" class="sobre-mi">
         <div class="container">
             <div class="sobre-mi-content">
                 <div class="sobre-mi-titulo">
@@ -146,7 +143,7 @@
                         inovadoras eficientes que permitan resolver problemas reales.
                     </p>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -214,16 +211,40 @@
             </div>
         </div>
     </section>
- 
+
+    <!--sección contacto-->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <!--titulo-->
+            <div class="contact-heading">
+                <i data-lucide="contact-round"></i>
+                <h2>Contacto</h2>
+            </div>
+            <!--descripción-->
+            <p class="contact-description">
+                ¿Tenés alguna consulta o propuesta?
+                No dudes en contactarme.
+            </p>
+            <!--mediois de contacto-->
+            <div class="contact-links">
+                <a href="mailto:arielalegre232@gmail.com">
+                    <i data-lucide="mail"></i>
+                    <span>Correo electrónico</span>
+                </a>
+                <a href="https://github.com/ArielAlegre12" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.simpleicons.org/github" alt="" class="github-icon" aria-hidden="true">
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/ariel-alegre-224a5b248/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13.21.0/icons/linkedin.svg"" alt="" class="linkedin-icon" aria-hidden="true">
+                    <span>Linkedin</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!--modal de proyectos-->
-    <div
-        class="modal fade"
-        id="projectModal"
-        tabindex="-1"
-        aria-labelledby="projectModalLabel"
-        aria-hidden="true"
-    >
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content project-modal">
                 <!--encabezado-->
@@ -231,39 +252,19 @@
                     <h5 class="modal-title" id="projectModalLabel">
                         Nombre del proyecto
                     </h5>
-                    <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Cerrar"
-                    ></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <!--contenido-->
                 <div class="modal-body">
-                    <img
-                        id="modalProjectImage"
-                        class="modal-project-image"
-                        alt=""
-                        hidden
-                    >
+                    <img id="modalProjectImage" class="modal-project-image" alt="" hidden>
                     <p id="modalProjectDescription"></p>
                     <h6>Tecnologías utilizadas</h6>
-                    <div
-                        id="modalProjectTechnologies"
-                        class="project-technologies"
-                    ></div>
+                    <div id="modalProjectTechnologies" class="project-technologies"></div>
                 </div>
                 <!--pie-->
                 <div class="modal-footer">
-                    <div
-                        id="modalProjectLinks"
-                        class="d-flex flex-wrap gap-3 me-auto"
-                    ></div>
-                    <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                    >
+                    <div id="modalProjectLinks" class="d-flex flex-wrap gap-3 me-auto"></div>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                         Cerrar
                     </button>
                 </div>

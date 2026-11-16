@@ -1,0 +1,96 @@
+/*SECCIÓN CONTACTO*/
+.contact-section{
+    padding: 80px 0;
+    background-color: var(--background);
+}
+
+/*encabezado*/
+.contact-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.contact-heading i{
+    width: 28px;
+    height: 28px;
+    color: var(--primary);
+}
+
+.contact-heading h2{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/*descripción*/
+.contact-description{
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: center;
+    font-size: 1rem;
+    color: var(--foreground);
+}
+
+/*enlaces de contacto*/
+.contact-links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.contact-links a{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 20px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background-color: var(--surface);
+    color: var(--primary);
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-links a:hover{
+    transform: translateY(-3px);
+    border-color: var(--primary);
+}
+
+.contact-links i,
+.contact-links img{
+    width: 20px;
+    height: 20px;
+}
+
+/*icono de linkedin*/
+.linkedin-icon{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*adaptar el icono al modo oscruo*/
+[data-theme="dark"] .linkedin-icon{
+    filter: invert(1);
+}
+
+/*responsive*/
+@media(max-width: 575px){
+    .contact-heading h2{
+        font-size: 1.7rem;
+    }
+    .contact-links{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .contact-links a{
+        justify-content: center;
+    }
+}
