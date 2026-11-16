@@ -12,8 +12,9 @@
 .proyectos-titulo{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.75rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .proyectos-titulo i{
@@ -25,15 +26,18 @@
 
 .proyectos-titulo h2{
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
     color: var(--primary);
 }
 
 /*GRID DE PROYECTOS*/
 .projects-grid{
     display: grid;
-    grid-template-columns: repeat(3, minmax(0,1fr));
+    grid-template-columns: repeat(2, minmax(0,1fr));
     gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 /*TARJETAS*/
@@ -260,14 +264,11 @@
 }
 
 /*RESPONSIVE*/
-@media(max-width: 991px){
-    .projects-grid{
-        grid-template-columns: repeat(2, minmax(0,1fr));
-    }
-}
-
 @media(max-width: 575px){
     .projects-grid{
         grid-template-columns: 1fr;
+    }
+    .proyectos-titulo h2{
+        font-size: 1.7rem;
     }
 }

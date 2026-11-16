@@ -1,0 +1,76 @@
+/*sección habilidades*/
+.skills-section{
+    padding: 80px 0;
+    background-color: var(--background);
+}
+/*encabezado*/
+.skills-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.skills-heading i {
+    width: 28px;
+    height: 28px;
+    color: var(--primary);
+}
+
+.skills-heading h2{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+/*grilla de tarjetas*/
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/*tarjetas*/
+.skill-card{
+    padding: 24px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.skill-card h3{
+    margin-bottom: 20px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+/*etiquetas de tecnologías*/
+.skill-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tags span{
+    padding: 7px 14px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-size: 0.9rem;
+}
+
+/*responsive*/
+@media (max-width: 575px){
+    .skills-grid{
+        grid-template-columns: 1fr;
+    }
+    .skills-heading h2{
+        font-size: 1.7rem;
+    }
+}
